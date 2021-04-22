@@ -1,0 +1,90 @@
+header
+{
+background-image: url("image/Reservia.svg");
+background-repeat: no-repeat;
+}
+
+#corps
+{
+    margin: 20px;
+
+}
+
+#nav
+{
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px;
+}
+
+a
+{
+    text-decoration: none; 
+}
+
+
+.hebergement
+{
+    width: 150px;
+}
+
+.activite
+{
+    width: 100px;
+}
+
+form
+{
+    height: 34px;
+    width: 400px;
+    background-color: #0065FC;
+    border: 1px solid grey;
+    border-radius: 10px;
+    
+}
+
+#filtre
+{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 400px;
+    justify-content: space-between;
+}
+
+.economique
+{
+    border: 1px solid grey;
+    border-radius: 20px;
+    height: 35px;
+    width: 150px;
+    text-align: center;
+}
+
+.familial
+{
+    border: 1px solid grey;
+    border-radius: 20px;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+}
+
+.romantique
+{
+    border: 1px solid grey;
+    border-radius: 20px;
+    height: 35px;
+    width: 150px;
+    text-align: center;
+}
+
+.animaux
+{
+    border: 1px solid grey;
+    border-radius: 20px;
+    height: 35px;
+    width: 200px;
+    text-align: center;
+}
+
+
