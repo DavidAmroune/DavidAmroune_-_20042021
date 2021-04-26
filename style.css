@@ -1,90 +1,134 @@
-header
-{
-background-image: url("image/Reservia.svg");
-background-repeat: no-repeat;
-}
 
 #corps
 {
     margin: 20px;
-
 }
 
 #nav
 {
     display: flex;
     justify-content: flex-end;
-    margin: 50px;
+    align-items: center;
+    margin-top: 30px;
 }
 
-a
+.logo:nth-child(1)
 {
-    text-decoration: none; 
+    flex: 2;
 }
 
-
-.hebergement
+.location:nth-child(2)
 {
-    width: 150px;
+    flex: 0.4;
 }
 
-.activite
+.activite:nth-child(3)
 {
+    flex: 0.3;
+}
+
+#nav a
+{
+    text-decoration: none;
+    color: black; 
+}
+
+#nav a:hover
+{
+    color: #0065FC;
+   border-top: 2px solid #0065FC;
+   padding: 20px;
+}
+.recherche a
+{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+#formulaire
+{
+    display: flex;
+    align-items: center;
+}
+
+.map
+{
+    background-color: #f2f2f2;
+    width: 20px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.recherche
+{
+    height: 20px;
     width: 100px;
+    background-color: #0065FC;
+    border-radius: 0px 10px 10px 0px;
+    padding: 12px;
 }
 
-form
-{
-    height: 34px;
-    width: 400px;
-    background-color: #0065FC;
-    border: 1px solid grey;
-    border-radius: 10px;
-    
-}
 
 #filtre
 {
     display: flex;
-    margin-top: 20px;
-    margin-right: 400px;
     justify-content: space-between;
+    width: 800px;
+    align-items: center;
+    margin: 20px;
 }
 
-.economique
+.economique, .romantique
 {
-    border: 1px solid grey;
+    border: 2px solid #f2f2f2;
     border-radius: 20px;
-    height: 35px;
+    height: 25px;
     width: 150px;
-    text-align: center;
-}
-
+    text-align:center;
+    padding-top: 5px;
+}  
 .familial
 {
-    border: 1px solid grey;
+    border: 2px solid #f2f2f2;
     border-radius: 20px;
-    height: 35px;
-    width: 100px;
+    height: 25px;
+    width: 120px;
     text-align: center;
-}
-
-.romantique
-{
-    border: 1px solid grey;
-    border-radius: 20px;
-    height: 35px;
-    width: 150px;
-    text-align: center;
+    padding-top: 5px;
 }
 
 .animaux
 {
-    border: 1px solid grey;
+    border: 2px solid #f2f2f2;
     border-radius: 20px;
-    height: 35px;
+    height: 25px;
     width: 200px;
     text-align: center;
+    padding-top: 5px;
 }
 
+#filtre i
+{
+    float: left;
+    position: relative;
+    bottom: 7px;
+    color: #0065FC;
+    width: 28px;
+    height: 28px;
+    border-radius: 30px;
+    background-color:#DEEBFF;
+    padding: 4px;
+    text-align: center;
+    font-size: 0.9em;
+}
 
+p i
+{
+    color: #0065FC;
+    border: 3px solid #f2f2f2;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    text-align:center;
+}
