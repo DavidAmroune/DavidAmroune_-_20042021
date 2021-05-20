@@ -122,11 +122,11 @@ button{
     display: flex; 
     align-items: center;  
     justify-content: space-between; 
-    padding-right: 25px; 
+    padding-right: 15px; 
     border: 2px solid #f2f2f2;
     border-radius: 20px;
     height: 35px;
-    width: 225px;
+    width: 220px;
     margin-top: 5%;
     box-sizing: border-box;    
 }
@@ -159,7 +159,6 @@ article{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 2%;
     box-sizing: border-box;
 }
 
@@ -182,8 +181,8 @@ article{
     background-color: #f2f2f2;
     border-radius: 10px;
     width: 70%;
+    margin-top:2%;
     padding: 2% ;
-    margin-bottom: 2%;
     box-sizing: border-box;
 }
 
@@ -216,6 +215,7 @@ article{
     background-color: #f2f2f2;
     width: 28%;
     min-width: 300px;
+    margin-top: 2%;
     padding: 2% 2% 0% 2% ;
     box-sizing: border-box;
 }
@@ -253,7 +253,7 @@ article{
 
 /* Alignement section3 */
 #section3{
-    margin-top: 5%;
+    margin-top: 5%;   
 }
 
 #activite{
@@ -316,7 +316,8 @@ footer{
     display: flex;
     justify-content: space-between;
     text-align: left;
-    padding: 2% 30% 2% 1%;
+    flex-wrap:wrap;
+    padding: 0 30% 2% 1%;
 }
 
 ul{
@@ -324,7 +325,7 @@ ul{
     padding:0 ;
 }
 
-@media screen and (max-width: 576px){ 
+@media screen and (max-width: 570px){ 
         main{ 
             margin: auto;
         }
@@ -346,6 +347,7 @@ ul{
             padding-bottom: 16px;
         }
 
+        /* Alignement des sections */
         #activite{
             flex-direction: column;
         }
@@ -353,13 +355,13 @@ ul{
         /* Changement d'ordre des liens de navigation */
         .location{
             order: 3;
-             width: 40%;
+            width: 40%;
             text-align: center;
         }
 
         .loisir{
             order: 4;
-              width: 60%;
+            width: 60%;
             text-align: right;
             position: relative;
             right: 10%;
@@ -369,6 +371,7 @@ ul{
             order: 2;
         }
 
+        /* Taille du titre */
         h1{
             width: 80%;
         }
@@ -413,8 +416,13 @@ ul{
 
         #section2 {
             order: 1;
-            width: 100%;
+            width:100%;
             border-radius: 0px; 
+        }
+
+        #section3{
+            width: 348px;
+            margin-left:2%;
         }
 
         /* Taille des images section1 */
@@ -430,12 +438,31 @@ ul{
         }
 
         /* Alignement footer */
-        footer 
-        {
+        footer{ 
             flex-direction: column;
             padding: 5%; 
-            justify-content: space-around;
-            
+            justify-content: space-around;    
         }
-        
 }
+
+@media screen and (min-width: 571px) and ( max-width: 1031px){
+        #section1, #section2{
+            width: 100%;
+        }
+
+        #section2 h2{
+            max-width: 100%;
+        }
+
+        #populaire{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 100%;
+            padding-top:1%;
+        }
+
+        .hotel_bleu, .hotel_soleil, .chambre{
+            width: 300px;
+        }
+    }
