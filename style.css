@@ -187,8 +187,7 @@ section:nth-child(1){
 }
 
 #hebergement .legende{
-   padding-left: 4%;
-    
+   padding-left: 4%;    
 }
 
 article p{
@@ -243,17 +242,16 @@ section:nth-child(3){
     margin-top: 5%;   
 }
 
-.activite{
+#activite{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 5%;
 }
 
-.activite a{
+#activite a{
     border:1px solid #f2f2f2;
     border-radius: 10px;
-    margin-top: 2%;
+    margin-top: 10px;
 }
 
 .vieux_port img, .parc_calanques img{
@@ -286,13 +284,14 @@ section:nth-child(3){
     border-radius: 10px 10px 0px 0px;
 }
 
+
 .fort, .nd{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.activite strong{
+#activite strong{
     padding: 2%;
 }
 
@@ -311,7 +310,7 @@ ul{
     padding:0 ;
 }
 
-@media screen and (max-device-width: 480px){ 
+@media all and (max-width: 480px){ 
         .marge{ 
             margin: auto;
         }
@@ -333,7 +332,7 @@ ul{
             padding-bottom: 16px;
         }
 
-        .activite{ /* Alignement activités à Marseille */
+        #activite{ /* Alignement activités à Marseille */
             flex-direction: column;
         }
 
@@ -354,10 +353,6 @@ ul{
         
         .sinscrire{
             order: 2;
-        }
-
-        h1{ /* Taille du titre */
-            width: 80%;
         }
         
         /* Alignement champ de recherche */
@@ -421,12 +416,11 @@ ul{
  
         footer{ /* Alignement footer */
             flex-direction: column;
-            padding: 5%; 
             justify-content: space-around;    
         }
 }
 
-@media screen and (min-width: 481px) and ( max-width: 1031px){
+@media all and (min-width: 481px) and ( max-width: 1031px){
         section:nth-child(1), section:nth-child(2){
             width: 100%;
         }
