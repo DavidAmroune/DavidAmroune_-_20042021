@@ -206,12 +206,12 @@ section:nth-child(2){
     box-sizing: border-box;
 }
 
-#populaire{
+.populaire{
     padding-top: 9%;
     max-width: 350px;
 }
 
-#populaire img{
+.populaire img{
     width: 127px;
     height: 134px;
     border-radius: 10px 0px 0px 10px;
@@ -227,7 +227,7 @@ section:nth-child(2){
     box-sizing: border-box;  
 }
 
-#populaire .legende{
+.populaire .legende{
     display:flex;
     flex-direction: column;
     padding: 2% 4% 2% 4% ;
@@ -430,7 +430,7 @@ ul{
             max-width: 100%;
         }
 
-        #populaire{
+        .populaire{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
